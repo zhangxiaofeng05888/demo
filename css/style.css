@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* 你自己的样式 */
+.dislpayArrow{
+    background: #00efff;
+}
+.menu_list li{
+    height: 36px;
+
+}
+.menu_list .menu_icon{
+    width: 20px;
+    margin-right: 5px;
+}
+.flex{
+    display: -moz-box;  /* Firefox */
+    display: -ms-flexbox;    /* IE10 */
+    display: -webkit-box;    /* Safari */ 
+    display: -webkit-flex;    /* Chrome, WebKit */
+    display: box; 
+    display: flexbox; 
+    display: flex;
+}
+.flex1{
+    -ms-flex: 1; /* IE 10 */
+    -webkit-flex: 1; 
+    flex: 1; 
+    /* for uc */
+    -webkit-box-flex: 1; 
+    -moz-box-flex: 1; 
+    -ms-flex: 1;
+}
+.card_list{
+    padding: 20px;
+}
+.card_list li{
+    height: auto;
+    min-height: 50px;
+    overflow: hidden;
+    border: 1px solid #a8d1f9;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.card_list li .card_right{
+    width: 120px;
+    margin-left: 20px;
+}
+.card_list li .card_left span{
+    margin-right: 40px;
+    display: inline-block;
+    line-height: 28px;
+}
+.form-label{
+    min-width: 120px;
+}
