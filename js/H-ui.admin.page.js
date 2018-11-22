@@ -21,7 +21,7 @@ $(function(){
 			Huiasidedisplay();
 		},500);
 	});
-	
+	$('.Hui-article').css('height',(window.innerHeight - 50) + 'px');
 	$(".nav-toggle").click(function(){
 		$(".Hui-aside").slideToggle();
 	});
@@ -34,11 +34,25 @@ $(function(){
 		var url = window.location.href;
 		var index;
 		$('.menu_list li').each(function(newindex,element){
-			if(url.indexOf($(element).attr('url'))!=-1){
+			if(url.indexOf($(element).find('a').attr('href'))!=-1){
 				index = newindex;
 			}
 		});
-        $('.menu_list li').eq(index).addClass('current').siblings().removeClass("current");
+        $('.menu_list li').eq(index).addClass('active').siblings().removeClass("active");
 	}
 	menuinit();
+	$(".menubtn").click(function(){
+		if ($(this).attr('isshow') == 'true') {
+			$('.Hui-aside').animate({left:'-200px'},500);
+			$('.content_right').animate({left:0},500);
+			$(this).animate({left:0},500);
+			$(this).attr('isshow', "false");
+		} else {
+			$('.Hui-aside').animate({left:0},500);
+			$(this).animate({left:'200px'},500);
+			$('.content_right').animate({left:'200px'},500);
+			$(this).attr('isshow','true');
+		}
+		
+	})
 }); 
