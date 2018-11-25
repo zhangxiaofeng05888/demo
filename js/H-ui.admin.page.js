@@ -53,6 +53,25 @@ $(function(){
 			$('.content_right').animate({left:'200px'},500);
 			$(this).attr('isshow','true');
 		}
-		
+	})
+	$(".tab_bg").on('click','li',function(){
+		$('.tab_bg li').removeClass('active');
+		$(this).addClass('active');
+	})
+	$(".tab_color").on('click','li',function(){
+		$('.tab_color li').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('.switch1').click(function(){
+		$('.switch1_info').show();
+		$('.switch2_info').hide();
+		$('.switch2').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('.switch2').click(function(){
+		$('.switch2_info').show();
+		$('.switch1_info').hide();
+		$('.switch1').removeClass('active');
+		$(this).addClass('active');
 	})
 }); 
