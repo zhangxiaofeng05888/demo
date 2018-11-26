@@ -123,9 +123,14 @@ body,html{
     margin-left: 20px;
 }
 .card_list>li .card_left span{
-    margin-right: 40px;
+    width: 24%;
     display: inline-block;
     line-height: 28px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-right: 5px;
+    vertical-align: top;
 }
 .card_list_left li{
     float: left;
