@@ -130,7 +130,9 @@ body,html{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     padding-right: 5px;
-    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card_list_left li{
     float: left;
