@@ -22,6 +22,9 @@ $(function(){
 		},500);
 	});
 	$('.Hui-article').css('height',(window.innerHeight - 50) + 'px');
+	if($('.menu_list')){
+		$('.menu_list').css('height',(window.innerHeight - 50) + 'px');
+	}
 	$(".nav-toggle").click(function(){
 		$(".Hui-aside").slideToggle();
 	});
