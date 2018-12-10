@@ -365,7 +365,6 @@ body,html{
     background: #333;
 }
 .switch1_info{
-    display: table;
     height: 100%;
     width: 100%;
     padding: 20px;
